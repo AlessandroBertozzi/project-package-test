@@ -1,0 +1,29 @@
+{
+    "name": "bertozzi/laravel-project-manager",
+    "description": "A Laravel package for managing manuscripts",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alessandro Bertozzi",
+            "email": "bertozzi@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Bertozzi\\Project\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bertozzi\\Project\\ProjectServiceProvider"
+            ],
+            "aliases": {
+                "ManuscriptManager": "Bertozzi\\Project\\Facades\\ProjectManager"
+            }
+        }
+    }
+}
